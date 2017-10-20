@@ -1,0 +1,14 @@
+body {
+	background: orange;
+}
+li{
+	border:2px solid blue;
+}
+/* id can only has one f*/
+#special{
+	background: yellow;
+}
+/*# for id*/
+.completed{
+	text-decoration: line-through;
+}

@@ -1,0 +1,15 @@
+DOM interface between HTML and JS
+every in page is javascript objects
+Document
+console.dir(document)
+
+Javascript select HTML and change it 
+link to DOM first lecture
+http://webdev.slides.com/coltsteele/intro-to-the-dom-70#/5
+
+Lecture 2:
+http://webdev.slides.com/coltsteele/deck-30-71#/
+
+everything on webpage in ducoment
+
+use document. a lot

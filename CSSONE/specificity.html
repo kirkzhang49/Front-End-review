@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specificity</title>
+	<style type="text/css">
+/*		ul{
+			color: purple;
+		}*/
+		body{
+			color: red;
+		}
+		/*select parants effect childs*/
+		ul{
+			color: blue;
+		}
+		li	{
+			color: orange;
+		}
+		.highlight{
+			color: yellow;
+		}
+		#one
+		{
+			color:pink;
+		}
+		/*the css more close to the element win */
+		/*attribute win */
+		/*http://specificity.keegan.st/  for calculate specificity 
+		id is most specifity*/
+/*		type < class<id
+		more specificity more scores*/
+	</style>
+</head>
+<body>
+<p>Hello</p>
+<ul>
+	<li id ="one"class="highlight">John</li>
+	<li>Paul</li>
+	<li>George</li>
+	<li class="highlight">Ringo</li>
+</ul>
+
+</body>
+</html>

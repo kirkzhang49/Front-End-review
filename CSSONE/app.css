@@ -1,0 +1,26 @@
+h1{
+	/* need all 3 border */
+	color: rgba(190, 190, 237, 0.99);
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+	border: 5px dashed rgba(33,123,80,0.93);
+	/*group or individually*/
+}
+h4 {
+	background: rgba(255,100,80,0.93);
+}
+li{
+	color: F400DD;
+}
+h4{
+	color:blue;
+}
+body{
+	background: pink
+/*	background: url(https://wallpaperbrowse.com/media/images/background-pictures-10.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; */
+}
+/*https://www.webpagefx.com/web-design/color-picker/*/
+/* https://wallpaperbrowse.com/background#images/518164-backgrounds.jpg */

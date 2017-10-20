@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+<h1>Login</h1>
+<!--  action - where the form send data to  -->
+<!-- method -what HTTP method (get/post) -->
+<!-- action="http://wikipedia.org" method="get" -->
+<!-- default action self default method get -->
+<!-- ?username=kirk&password=123456 -->
+<!-- <form action="http://www.wikipedia.org">
+	<label>
+		UserName:
+		<input name="username"type="text" placeholder="UserName">
+	</label>
+	<label>
+		Password:
+		<input name="password"type="password" placeholder="PassWord">
+	</label>
+	
+	<input type="submit" name="">	
+</form> -->
+<form action="http://www.wikipedia.org">
+	<label for="email">Email:</label>
+	<input id="email" type="email" placeholder="Email" required>
+	<label for="password">UserName:</label>
+	<input id="password" type="password" placeholder="PassWord" required>
+	<input type="submit" name="">	
+</form>
+<p>Do you prefer cats or dogs?</p>
+<form>
+<!-- 	same name will be only one choice different or none name can has multiple -->
+	<label for="dogs">Dogs:</label>
+	<input id="dogs" type="radio" name="only have one choise" value="dogs">
+	<label for="cats">Cats:</label>
+	<input id="cats" type="radio" name="only have one choise" value="cats">
+	<p>What's your favorite mood?</p>
+<!-- 	it will take the value as in option inside as deafult or value-->
+	<select name="mood">
+		<option value=“happy”>:)</option>
+		<option value="neutral">:|</option>
+		<option value="sad">:(</option>
+	</select>
+<!-- 	<input type="text" name="">
+ -->
+	<textarea name="paragraph" rows="10" cols="10"></textarea>
+
+	<button>Go !</button>
+</form>
+
+<!-- <input type="radio" name="only have one choise"> -->
+<!-- <input type="checkbox" name="multiple choice">-->
+</body>
+</html>
