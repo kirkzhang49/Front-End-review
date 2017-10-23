@@ -1,0 +1,38 @@
+
+#img1,#img2,#text1,#text2 {
+	display: none;
+}
+
+#header {
+	padding-left: 150px;
+}
+li{
+	padding-right: 30px;
+	padding-left: 30px;
+	 padding-top: 10px;
+}
+a {
+    color: white;
+}
+h2 { 
+   position: absolute; 
+   color: white;
+   top: 450px; 
+   right: 200px;
+   width: 100%; 
+}
+div #content{
+	text-align: center;
+	  position: relative; 
+   width: 100%; /* for IE 6 */
+}
+body{
+	/*background:url(https://source.unsplash.com/FO18LpXMlvk);*/
+	background-color: gray;
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+}
+html{
+	height: 100%
+}

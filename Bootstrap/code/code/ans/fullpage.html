@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>full page</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.easings.min.js"></script>
+<script type="text/javascript" src="scrolloverflow.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+		sectionsColor: ['#4BBFC3','black'],
+		fadingEffect: true,
+		scrollingSpeed: 2000,
+		/* Leave */
+		onLeave: function(index, nextIndex, direction){
+			if(index==1)
+			{
+			$('#text1').fadeOut(500,function(){
+				$('#img1').fadeOut(300);
+			});
+		}
+		 	if(index==2)
+		{
+			$('#text2').fadeOut(500,function(){
+				$('#img2').fadeOut(300);
+			});
+		}
+		},
+		/* Load */
+		afterLoad: function(anchorLink, index){
+			if(index==1)
+			{
+			$('#text1').fadeIn(500,function(){
+				$('#img1').fadeIn(300);
+			});
+		}
+		 	if(index==2)
+		{
+			$('#text2').fadeIn(500,function(){
+				$('#img2').fadeIn(300);
+			});
+		}
+		}
+	});
+});
+</script>
+</head>
+<body>
+    <nav>
+      <div class="navbar navbar-fixed-top ">
+          <!--<a class="navbar-brand" href="#">Title</a> -->
+        <div class="navbar navbar-fixed-top">                
+                    <div  class="container">
+            <div class="inner-nav">
+                <!--<a href="#" class="navbar-brand">Title</a> -->
+                <ul class="nav navbar-nav">
+                    <li id="header"><a href="#">Projects</a></li>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="#" >Services</a></li>
+                    <li><a href="#" >News</a></li>
+                    <li><a href="#" >Contact</a></li>
+                    <li><a href="#" >ES</a></li>
+                </ul>
+            </div>
+            </div>                
+            </div>   
+      </div>
+    </nav>
+
+<div id="fullpage">
+<div class="section">
+	<div class="container ">
+		<div id="content">
+     <div id="img1"> <img class="myimg" src="josh-0.png"></div>
+       <h2 id="text1">Welcome Home</h2>
+    </div>
+</div>
+</div>
+<div class="section">
+	<div class="container ">
+		<div id="content">
+     <div id="img2"> <img class="myimg" src="josh-1.png"></div>
+       <h2 id="text2">Good Bye</h2>
+    </div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

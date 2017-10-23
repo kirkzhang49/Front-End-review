@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>full page</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <nav>
+      <div class="navbar navbar-fixed-top ">
+          <!--<a class="navbar-brand" href="#">Title</a> -->
+        <div class="navbar navbar-fixed-top">                
+                    <div  class="container">
+            <div class="inner-nav">
+                <!--<a href="#" class="navbar-brand">Title</a> -->
+                <ul class="nav navbar-nav">
+                    <li id="header"><a href="#">Projects</a></li>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="#" >Services</a></li>
+                    <li><a href="#" >News</a></li>
+                    <li><a href="#" >Contact</a></li>
+                    <li><a href="#" >ES</a></li>
+                </ul>
+            </div>
+            </div>                
+            </div>   
+      </div>
+    </nav>
+<div class="mydiv" style="background-color: #aaa">
+	<div class="container ">
+		<div id="content">
+      <img id="fade1" class="myimg" src="josh-0.png">
+       <h2 >Welcome Home</h2>
+    </div>
+</div>
+</div>
+
+<div class="mydiv" style="background-color: black">
+	<div class="container ">
+	<div id="content">
+      <img  class="myimg" src="josh-1.png">
+       <h2>Good Bye</h2>
+    </div>
+</div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('#fullpage').fullpage();
+});
+</script>
+</body>
+</html>
